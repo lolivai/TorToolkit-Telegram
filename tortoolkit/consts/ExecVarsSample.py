@@ -5,13 +5,13 @@ except:
     class ExecVars:
         # TODO optimize for vps use fully - currently only heroku is focused
         # Set true if its VPS [currently not fully working]
-        IS_VPS = False
-        API_HASH = os.environ.get("API_HASH")
-        API_ID = int(os.environ.get("APP_ID", 12345))
-        BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-        BASE_URL_OF_BOT = os.environ.get("BASE_URL_OF_BOT", "")
+        IS_VPS = true
+        API_HASH = os.environ.get("API_HASH", "61158815c58e158cfa9520c85676a450")
+        API_ID = int(os.environ.get("APP_ID", "14000256"))
+        BOT_TOKEN = os.environ.get("BOT_TOKEN", "5922301049:AAEjF3VoIKuvoFnJwBvl2sR0mcQKIkwnrr0")
+        BASE_URL_OF_BOT = os.environ.get("BASE_URL_OF_BOT", "http://181.225.255.142/")
         # ALLOWED USERS [ids of user or supergroup] seperate by commas
-        ALD_USR = set(int(x) for x in os.environ.get("AUTH_CHANNEL", "").split())
+        ALD_USR = set(int(x) for x in os.environ.get("AUTH_CHANNEL", "731229220").split())
         
         # Google Drive Index Link should include the base dir also See readme for more info
         GD_INDEX_URL = os.environ.get("GD_INDEX_URL", "False")
@@ -32,7 +32,7 @@ except:
         REMAINING_STR = os.environ.get("REMAINING_STR", "░")
 
         # DB URI for access
-        DB_URI = os.environ.get("DATABASE_URL", "")
+        DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://lazaro:7CT629dN3sC6-Jp@cluster0.7wk8nml.mongodb.net/?retryWrites=true&w=majority")
         
         # UNCOMMENT THE BELOW LINE WHEN USING CONTAINER AND COMMENT THE UPPER LINE
         #DB_URI = "dbname=tortk user=postgres password=your-pass host=db port=5432"
